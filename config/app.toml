@@ -1,0 +1,21 @@
+# This site's configuration, bind-mounted read-only into the container.
+
+[site]
+name = "podpack demo"
+environment = "local"
+base_url = "http://localhost:8459"
+
+# The app this site installs, by *import* name. It comes from its own
+# repository, declared in pyproject.toml -- which is the whole point of this
+# site existing.
+apps = ["podpack_notes"]
+
+[database]
+pool_size = 5
+max_overflow = 5
+pool_pre_ping = true
+echo = false
+
+# Keyed by the app's own name -- its blueprint's -- not the import name above.
+[apps.notes]
+page_size = 10

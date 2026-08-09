@@ -1,0 +1,8 @@
+.venv
+.env
+secrets.env
+hostdata/
+hostlogs/
+__pycache__/
+*.py[cod]
+dist/

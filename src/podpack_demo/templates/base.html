@@ -1,0 +1,17 @@
+{# The site's own chrome. Every installed app extends this without knowing
+   whose it is, which is what makes an app look like part of the site. #}
+<!doctype html>
+<title>{{ site.name }}</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 44rem; margin: 2rem auto;
+         padding: 0 1rem; line-height: 1.5; color: #222; }
+  header { border-bottom: 3px solid #b8860b; padding-bottom: .5rem; }
+  nav a { margin-right: 1rem; }
+</style>
+<header>
+  <h1>{{ site.name }}</h1>
+  <nav>
+    {% for s in sections %}<a href="{{ url_for(s.endpoint) }}">{{ s.label }}</a>{% endfor %}
+  </nav>
+</header>
+{% block content %}{% endblock %}
