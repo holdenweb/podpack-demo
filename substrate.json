@@ -1,0 +1,120 @@
+{
+  "delivered_vars": {
+    ".env": [
+      "GUNICORN_WORKERS",
+      "HOST_DATA_DIR",
+      "HOST_LOG_DIR",
+      "POSTGRES_HOST_PORT",
+      "SITE_NAME",
+      "WEB_BIND_ADDR",
+      "WEB_HOST_PORT"
+    ],
+    ".env.example": [
+      "GUNICORN_WORKERS",
+      "HOST_DATA_DIR",
+      "HOST_LOG_DIR",
+      "POSTGRES_HOST_PORT",
+      "SITE_NAME",
+      "WEB_BIND_ADDR",
+      "WEB_HOST_PORT"
+    ],
+    "secrets.env.example": [
+      "POSTGRES_APP_PASSWORD",
+      "POSTGRES_APP_USER",
+      "POSTGRES_DB",
+      "POSTGRES_PASSWORD",
+      "POSTGRES_USER",
+      "SECRET_KEY",
+      "SQLALCHEMY_DATABASE_URI"
+    ]
+  },
+  "files": {
+    ".dockerignore": {
+      "class": "verbatim",
+      "sha256": "cd6a30c44236eed4bce56550fb6db07f202cb10b1254f959a510919e1ca55fe4"
+    },
+    ".env.example": {
+      "class": "config",
+      "seeded_by": "pre-existing",
+      "sha256": "dff77bb0140ed7a50954ebed3dff0c94a0964f92a564e5931264f97c1df32a15"
+    },
+    ".gitignore": {
+      "class": "seeded",
+      "seeded_by": "pre-existing",
+      "sha256": "1ec0ce07273ed42a343725981a2da3b711dfa2f202bc8fa0ca3f9f469b0f70e5"
+    },
+    "Containerfile": {
+      "class": "rendered",
+      "sha256": "c709824001baa5bcc9f3e55dfa640fc88ba632a93f7b00a23d85b246c1d96204"
+    },
+    "README.md": {
+      "class": "seeded",
+      "seeded_by": "pre-existing",
+      "sha256": "e59131b9e8b8e25b4a3ba64e1f6fe5c2df0ba37dc76391bd822d2aa421185fbb"
+    },
+    "alembic.ini": {
+      "class": "verbatim",
+      "sha256": "ac24125989a98206ddeae83d3ae0396feceaa0dfe5dfb6a0e22d3d57d3c25fbc"
+    },
+    "alembic/env.py": {
+      "class": "verbatim",
+      "sha256": "645bd42bd53e09c7e223fe5155eaf5a77168b4bbeda2084f52b6bae8825e9bb1"
+    },
+    "alembic/script.py.mako": {
+      "class": "verbatim",
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "alembic/versions/.gitkeep": {
+      "class": "seeded",
+      "seeded_by": "0.3.0",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "compose.yaml": {
+      "class": "verbatim",
+      "sha256": "4a6f58981c7da742f8edf2ee98a2ee6bf7af43cd88c3368dee59fddf961dbf75"
+    },
+    "config/pg_hba.conf": {
+      "class": "verbatim",
+      "sha256": "daff047df76cba400c533a96affb63249c2eafa81c0b9381763221d92d642a78"
+    },
+    "config/pg_ident.conf": {
+      "class": "verbatim",
+      "sha256": "807439099d64e9dec597abbd7ec2a58acdd2b26a2f5b4a13d853cc9b0f68f96b"
+    },
+    "config/postgresql.conf": {
+      "class": "verbatim",
+      "sha256": "b4ba506fc5a5717ba6fed8f27270dd5918f8d7a38822b48e1af49ef1a54beb86"
+    },
+    "container/healthcheck.py": {
+      "class": "verbatim",
+      "sha256": "4a82ddfe742d61d7d48ed322fa85573ece69e6672fe0d519a978703d22215052"
+    },
+    "db-init/01-create-app-user.sh": {
+      "class": "verbatim",
+      "sha256": "44202d372549fd421a3e141ed7d75c7d55175e7252cc7da935bc5e3af803bdf1"
+    },
+    "scripts/prepare-host-dirs.sh": {
+      "class": "verbatim",
+      "sha256": "c5a8451ec9c9bc18dc0c71de182642af93790aa8866aef3a4ec0072936a29095"
+    },
+    "scripts/up.sh": {
+      "class": "verbatim",
+      "sha256": "2ef3995ed7777b5d22246ca9fd1ba1a6a54f18f136bad883520db877479cf8d0"
+    },
+    "secrets.env.example": {
+      "class": "config",
+      "seeded_by": "pre-existing",
+      "sha256": "43380247d66bb5b9c4f8d2fab7321dfb050e9d1b4873e5a99817c266163002d1"
+    }
+  },
+  "parameters": {
+    "db_name": "podpack_demo",
+    "db_port": "5433",
+    "db_user": "podpack_demo_app",
+    "site_name": "podpack-demo",
+    "site_package": "podpack_demo",
+    "web_port": "8458"
+  },
+  "podpack_version": "0.3.0",
+  "substrate_schema": 1
+}
