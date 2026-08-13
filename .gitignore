@@ -13,3 +13,8 @@ dist/
 # a manifest and never sweeps a directory -- but a mixed directory is an
 # invitation to a mistake nobody needs.
 scratch/
+
+# The SQLite database creating-a-site.md step 6 creates, and the instance
+# folder Flask-SQLAlchemy resolves a relative path against.
+dev.db
+src/instance/
