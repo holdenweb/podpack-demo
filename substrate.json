@@ -28,6 +28,7 @@
       "PODPACK_DATA_ROOT",
       "PODPACK_LOG_ROOT",
       "SECRET_KEY",
+      "SECURITY_PASSWORD_SALT",
       "SQLALCHEMY_DATABASE_URI"
     ],
     "secrets.env.example": [
@@ -37,6 +38,7 @@
       "POSTGRES_PASSWORD",
       "POSTGRES_USER",
       "SECRET_KEY",
+      "SECURITY_PASSWORD_SALT",
       "SQLALCHEMY_DATABASE_URI"
     ]
   },
@@ -120,7 +122,7 @@
     "dev.env.example": {
       "class": "config",
       "seeded_by": "0.4.1",
-      "sha256": "48609551db28b78310f5ad60b595ba0ef7e3433c3872aee5696ba88b1ff74974"
+      "sha256": "a96d3aeac5e868f5573ac33279e1d5694095b63272c25c995a8f03b1a516b2c7"
     },
     "mongodb-init/01-create-app-user.sh": {
       "class": "verbatim",
@@ -141,7 +143,7 @@
     "secrets.env.example": {
       "class": "config",
       "seeded_by": "pre-existing",
-      "sha256": "43380247d66bb5b9c4f8d2fab7321dfb050e9d1b4873e5a99817c266163002d1"
+      "sha256": "488dd24eabebbc39adb19eca03a716fcc5ab4d3d188cd4bd95cd58d11b7e5175"
     }
   },
   "parameters": {
@@ -152,6 +154,6 @@
     "site_package": "podpack_demo",
     "web_port": "8458"
   },
-  "podpack_version": "0.5.1",
+  "podpack_version": "0.5.2",
   "substrate_schema": 1
 }
