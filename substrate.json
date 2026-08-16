@@ -22,6 +22,14 @@
       "WEB_BIND_ADDR",
       "WEB_HOST_PORT"
     ],
+    "dev.env.example": [
+      "FLASK_RUN_PORT",
+      "PODPACK_CONFIG",
+      "PODPACK_DATA_ROOT",
+      "PODPACK_LOG_ROOT",
+      "SECRET_KEY",
+      "SQLALCHEMY_DATABASE_URI"
+    ],
     "secrets.env.example": [
       "POSTGRES_APP_PASSWORD",
       "POSTGRES_APP_USER",
@@ -35,7 +43,7 @@
   "files": {
     ".dockerignore": {
       "class": "verbatim",
-      "sha256": "3baa54f8b01619d34a146e46afb10878454a0bf1c24d88478760e09c6ad1b42b"
+      "sha256": "a65fa6acfdcc26db5de97b7ba3fde2048a7b11cc291b72966e499d14b95c5e57"
     },
     ".env.example": {
       "class": "config",
@@ -62,7 +70,7 @@
     },
     "alembic/env.py": {
       "class": "verbatim",
-      "sha256": "645bd42bd53e09c7e223fe5155eaf5a77168b4bbeda2084f52b6bae8825e9bb1"
+      "sha256": "870885c26c68b4bc816f92e1e46b7076bd769256705a9b9d7786afa5905275c4"
     },
     "alembic/script.py.mako": {
       "class": "verbatim",
@@ -109,9 +117,18 @@
       "class": "verbatim",
       "sha256": "44202d372549fd421a3e141ed7d75c7d55175e7252cc7da935bc5e3af803bdf1"
     },
+    "dev.env.example": {
+      "class": "config",
+      "seeded_by": "0.4.1",
+      "sha256": "48609551db28b78310f5ad60b595ba0ef7e3433c3872aee5696ba88b1ff74974"
+    },
     "mongodb-init/01-create-app-user.sh": {
       "class": "verbatim",
       "sha256": "a77c518c03c7741773eb2f7edefb62aa1570459dcb3a3f52f687c7485ff666cc"
+    },
+    "scripts/dev.sh": {
+      "class": "rendered",
+      "sha256": "2b3fee4a15706c5fcdd9eaebe5284605bc0f4d1d2b2f355cf2aaba4ee4f5b2ec"
     },
     "scripts/prepare-host-dirs.sh": {
       "class": "verbatim",
@@ -135,6 +152,6 @@
     "site_package": "podpack_demo",
     "web_port": "8458"
   },
-  "podpack_version": "0.3.0",
+  "podpack_version": "0.4.1",
   "substrate_schema": 1
 }
