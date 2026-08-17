@@ -478,8 +478,8 @@ wheels = [
 
 [[package]]
 name = "podpack"
-version = "0.6.0"
-source = { git = "https://github.com/holdenweb/podpack.git#108e06edd28db547038baddf44b5445b6b68c487" }
+version = "0.6.1"
+source = { git = "https://github.com/holdenweb/podpack.git#a98a9ce6a5736c3515f8063dfcc7a197de345928" }
 dependencies = [
     { name = "alembic" },
     { name = "argon2-cffi" },
