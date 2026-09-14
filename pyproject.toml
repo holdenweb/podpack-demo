@@ -15,5 +15,5 @@ build-backend = "uv_build"
 module-name = "podpack_demo"
 
 [tool.uv.sources]
-podpack = { git = "https://github.com/holdenweb/podpack.git" }
-podpack-notes = { git = "https://github.com/holdenweb/podpack-notes.git" }
+podpack = { git = "https://github.com/holdenweb/podpack.git", rev = "r0.9.1" }
+podpack-notes = { git = "https://github.com/holdenweb/podpack-notes.git", rev = "r0.1.3" }

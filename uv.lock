@@ -478,8 +478,8 @@ wheels = [
 
 [[package]]
 name = "podpack"
-version = "0.9.1+dev"
-source = { git = "https://github.com/holdenweb/podpack.git#b69db0a23e3a200b4c5efcc741fc3cf6a410cdc3" }
+version = "0.9.1"
+source = { git = "https://github.com/holdenweb/podpack.git?rev=r0.9.1#5ead3453095f91da19d30ed597663e7def64b074" }
 dependencies = [
     { name = "alembic" },
     { name = "argon2-cffi" },
@@ -501,14 +501,14 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "podpack", git = "https://github.com/holdenweb/podpack.git" },
-    { name = "podpack-notes", git = "https://github.com/holdenweb/podpack-notes.git" },
+    { name = "podpack", git = "https://github.com/holdenweb/podpack.git?rev=r0.9.1" },
+    { name = "podpack-notes", git = "https://github.com/holdenweb/podpack-notes.git?rev=r0.1.3" },
 ]
 
 [[package]]
 name = "podpack-notes"
-version = "0.1.3+dev"
-source = { git = "https://github.com/holdenweb/podpack-notes.git#d0a5035c94b36f33b5ec79c5b64a513aa6a5f44d" }
+version = "0.1.3"
+source = { git = "https://github.com/holdenweb/podpack-notes.git?rev=r0.1.3#96d97502cd985fe01caa310c5d7ac8ef03ee436b" }
 
 [[package]]
 name = "psycopg2-binary"
