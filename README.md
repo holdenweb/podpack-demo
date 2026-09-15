@@ -22,7 +22,7 @@ run at once.
 
 | | |
 | --- | --- |
-| `pyproject.toml` | both packages, from git. An app does not pull in its framework, so a site names both. |
+| `pyproject.toml` | both packages: the app from PyPI, the framework from git. An app does not pull in its framework, so a site names both. |
 | `config/app.toml` | `apps = ["podpack_notes"]` — the import name — and `[apps.notes]`, keyed by the app's own name |
 | `src/podpack_demo/templates/base.html` | the site's chrome, which the installed app extends without knowing whose it is |
 | `alembic/versions/` | this site's own history. The migration creating the notes table was **generated here**, not copied: a migration history belongs to the site, not to the app. |

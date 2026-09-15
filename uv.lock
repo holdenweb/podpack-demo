@@ -502,13 +502,21 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "podpack", git = "https://github.com/holdenweb/podpack.git?rev=r0.9.1" },
-    { name = "podpack-notes", git = "https://github.com/holdenweb/podpack-notes.git?rev=r0.1.3" },
+    { name = "podpack-notes", specifier = ">=0.1.4" },
 ]
 
 [[package]]
 name = "podpack-notes"
-version = "0.1.3"
-source = { git = "https://github.com/holdenweb/podpack-notes.git?rev=r0.1.3#96d97502cd985fe01caa310c5d7ac8ef03ee436b" }
+version = "0.1.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "flask-wtf" },
+    { name = "wtforms" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/62/19/f68f2aa0d77eee0d8be58e862d1ed575bc1d5d7b412c3c704d8e7be7901f/podpack_notes-0.1.4.tar.gz", hash = "sha256:c03ff0bbf2ea95b9eebd2a2c3e006e6ab26e908426b8ebc5bbfe5ce81c4706db", size = 9671, upload-time = "2026-09-15T14:42:19.652Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0a/7f/551375f1dc019b0b5aa7161f3e0e33605b5a4c560861c8c457ee4d4910bc/podpack_notes-0.1.4-py3-none-any.whl", hash = "sha256:4ce4e753d658196315a7328f4f43b464f7c54d36d68ea869820548f06da4c966", size = 12003, upload-time = "2026-09-15T14:42:18.818Z" },
+]
 
 [[package]]
 name = "psycopg2-binary"
