@@ -1,6 +1,6 @@
 [project]
 name = "podpack-demo"
-version = "0.2.0"
+version = "0.3.0"
 description = "A podpack site, built by following creating-a-site.md"
 requires-python = ">=3.12"
 license = "MIT"
@@ -19,7 +19,10 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     "Topic :: Software Development :: Libraries :: Application Frameworks",
 ]
-dependencies = ["podpack>=0.9.1", "podpack-notes>=0.1.4"]
+dependencies = [
+    "podpack>=0.9.1",
+    "podpack-notes>=0.1.4",
+]
 
 [build-system]
 requires = ["uv_build>=0.8.4,<0.9.0"]
@@ -29,7 +32,14 @@ build-backend = "uv_build"
 module-name = "podpack_demo"
 
 [tool.uv.sources]
-podpack = { git = "https://github.com/holdenweb/podpack.git", rev = "r0.9.1" }
+podpack = { git = "https://github.com/holdenweb/podpack.git", rev = "r0.9.5" }
 # podpack-notes is not here on purpose. It publishes to PyPI now, so naming no
 # source is what sends uv there for it, and the version above is the whole pin.
-# podpack does not, which is why it still names a tag on a git URL.
+#
+# podpack publishes too, and has since August -- so the git source above is no
+# longer the only way to get it, and keeping it is a choice rather than a
+# leftover. What it buys is the one thing nothing else in the estate does any
+# more: podpack's Containerfile installs git in its builder stage *because* a
+# dependency may be locked to a git source, and since holdenweb.com went to
+# plain versions this build is the only one that exercises that layer. Drop the
+# source and the layer stops being tested anywhere.

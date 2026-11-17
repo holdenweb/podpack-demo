@@ -65,7 +65,7 @@
     },
     "Containerfile": {
       "class": "rendered",
-      "sha256": "c709824001baa5bcc9f3e55dfa640fc88ba632a93f7b00a23d85b246c1d96204"
+      "sha256": "78769fc89dd48c579330d0d64ccd07b43f75aa01375ae7678cae0c55ec863638"
     },
     "README.md": {
       "class": "seeded",
@@ -176,6 +176,6 @@
     "site_package": "podpack_demo",
     "web_port": "8458"
   },
-  "podpack_version": "0.9.1",
+  "podpack_version": "0.9.5",
   "substrate_schema": 1
 }
