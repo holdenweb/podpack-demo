@@ -33,6 +33,11 @@ module-name = "podpack_demo"
 
 [tool.uv.sources]
 podpack = { git = "https://github.com/holdenweb/podpack.git", rev = "r0.9.5" }
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.1",
+]
 # podpack-notes is not here on purpose. It publishes to PyPI now, so naming no
 # source is what sends uv there for it, and the version above is the whole pin.
 #
