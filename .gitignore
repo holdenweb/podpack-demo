@@ -22,3 +22,5 @@ src/instance/
 # Wing project files
 *.wp[ru]
 
+devdata
+devlogs
