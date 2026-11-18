@@ -20,7 +20,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Application Frameworks",
 ]
 dependencies = [
-    "podpack>=0.9.1",
+    "podpack>=0.10.1",
     "podpack-notes>=0.1.4",
 ]
 
@@ -32,7 +32,7 @@ build-backend = "uv_build"
 module-name = "podpack_demo"
 
 [tool.uv.sources]
-podpack = { git = "https://github.com/holdenweb/podpack.git", rev = "r0.9.5" }
+podpack = { git = "https://github.com/holdenweb/podpack.git", rev = "r0.10.1" }
 
 [dependency-groups]
 dev = [

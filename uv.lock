@@ -699,8 +699,8 @@ wheels = [
 
 [[package]]
 name = "podpack"
-version = "0.9.5"
-source = { git = "https://github.com/holdenweb/podpack.git?rev=r0.9.5#3001c014f7f122e32d8f4583362dd6851beef5fb" }
+version = "0.10.1"
+source = { git = "https://github.com/holdenweb/podpack.git?rev=r0.10.1#cd4481e8c535551095d323c1bc1b6b20fa861dd6" }
 dependencies = [
     { name = "alembic" },
     { name = "argon2-cffi" },
@@ -727,7 +727,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "podpack", git = "https://github.com/holdenweb/podpack.git?rev=r0.9.5" },
+    { name = "podpack", git = "https://github.com/holdenweb/podpack.git?rev=r0.10.1" },
     { name = "podpack-notes", specifier = ">=0.1.4" },
 ]
 
